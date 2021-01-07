@@ -79,6 +79,16 @@
           this.handleActivateFriend = this.handleActivateFriend.bind(this);
           this.handleDeactivateFriend = this.handleDeactivateFriend.bind(this);
           this.handleClearAll = this.handleClearAll.bind(this);
+
+          console.log("constructor");
+        }
+
+        componentDidMount() {
+          console.log("componentDidMount");
+        }
+
+        componentDidUpdate() {
+          console.log("componentDidUpdate");
         }
 
         handleAddFriend() {
@@ -138,6 +148,7 @@
         }
 
         render() {
+          console.log("render");
           return (
             <div id="container">
               <input
